@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23273" started-at="2018-09-03T04:13:09Z" finished-at="2018-09-03T04:13:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23273" started-at="2018-09-03T04:13:09Z" finished-at="2018-09-03T04:13:32Z">
+      <class name="com.scp.orange.hrm.login.OrangeHRMLoginTest">
+        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@5419f379]" name="verifyUserLoginCredentials" duration-ms="14543" started-at="2018-09-03T09:43:10Z" data-provider="data" finished-at="2018-09-03T09:43:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Welcome Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginCredentials -->
+        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@5419f379]" name="verifyUserLoginCredentials" duration-ms="8033" started-at="2018-09-03T09:43:24Z" data-provider="data" finished-at="2018-09-03T09:43:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fggh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jhghj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginCredentials -->
+      </class> <!-- com.scp.orange.hrm.login.OrangeHRMLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

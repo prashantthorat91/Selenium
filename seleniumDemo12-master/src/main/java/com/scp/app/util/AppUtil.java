@@ -1,7 +1,5 @@
 		package com.scp.app.util;
 
-import junit.framework.Assert;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,6 +7,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.scp.app.constants.AppConstants.BrowserNames;
+
+import junit.framework.Assert;
 		
 		public class AppUtil {
 			static WebDriver driver = null;

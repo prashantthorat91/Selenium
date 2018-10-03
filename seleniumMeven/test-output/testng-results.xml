@@ -1,92 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24572" started-at="2018-09-03T04:10:37Z" finished-at="2018-09-03T04:11:01Z">
+  <suite name="Default suite" duration-ms="66" started-at="2018-09-11T04:16:13Z" finished-at="2018-09-11T04:16:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24572" started-at="2018-09-03T04:10:37Z" finished-at="2018-09-03T04:11:01Z">
-      <class name="scp.selenium.seleniumMeven.OrangeHrmLoginTest">
-        <test-method status="FAIL" signature="verifyUserLoginCrentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scp.selenium.seleniumMeven.OrangeHrmLoginTest@2ef5e5e3]" name="verifyUserLoginCrentials" duration-ms="15072" started-at="2018-09-03T09:40:37Z" data-provider="data" finished-at="2018-09-03T09:40:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Welcome Admin]]>
-              </value>
-            </param>
-          </params>
-          <exception class="junit.framework.AssertionFailedError">
-            <message>
-              <![CDATA[Driver is not initilized..initilize first..then get it...!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: Driver is not initilized..initilize first..then get it...!
-	at junit.framework.Assert.fail(Assert.java:47)
-	at scp.selenium.seleniumMeven.AppUtil.getWebdriver(AppUtil.java:28)
-	at scp.web.pageobject.OrangeHrmLogin.clickLoginWithSuccess(OrangeHrmLogin.java:34)
-	at scp.selenium.seleniumMeven.OrangeHrmLoginTest.verifyUserLoginCrentials(OrangeHrmLoginTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+    <test name="Default test" duration-ms="66" started-at="2018-09-11T04:16:13Z" finished-at="2018-09-11T04:16:13Z">
+      <class name="scp.selenium.seleniumMeven.Atest">
+        <test-method status="PASS" signature="B()[pri:0, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="B" duration-ms="12" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginCrentials -->
-        <test-method status="PASS" signature="verifyUserLoginCrentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scp.selenium.seleniumMeven.OrangeHrmLoginTest@2ef5e5e3]" name="verifyUserLoginCrentials" duration-ms="8844" started-at="2018-09-03T09:40:53Z" data-provider="data" finished-at="2018-09-03T09:41:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[fggh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jhghj]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid credentials]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- B -->
+        <test-method status="PASS" signature="E()[pri:0, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="E" duration-ms="3" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginCrentials -->
-      </class> <!-- scp.selenium.seleniumMeven.OrangeHrmLoginTest -->
+        </test-method> <!-- E -->
+        <test-method status="PASS" signature="F()[pri:0, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="F" duration-ms="2" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- F -->
+        <test-method status="PASS" signature="A()[pri:1, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="A" duration-ms="2" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method status="PASS" signature="C()[pri:1, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="C" duration-ms="4" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- C -->
+        <test-method status="PASS" signature="D()[pri:2, instance:scp.selenium.seleniumMeven.Atest@100fc185]" name="D" duration-ms="1" started-at="2018-09-11T09:46:13Z" finished-at="2018-09-11T09:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- D -->
+      </class> <!-- scp.selenium.seleniumMeven.Atest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

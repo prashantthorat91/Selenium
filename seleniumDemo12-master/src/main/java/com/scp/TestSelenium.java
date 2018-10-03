@@ -65,8 +65,10 @@ public class TestSelenium {
 					break;
 				}
 		}
+		
 	
 		Thread.sleep(1500);
+		
 		
 		String [] userProf = {"Manual Tester","Automation Tester"};
 		
@@ -81,17 +83,21 @@ public class TestSelenium {
 		}
 		
 		Thread.sleep(1500);
+		
+		 
 		String userContinent = "South America";
 		Select dropDown = new Select(continents);
 		dropDown.selectByVisibleText(userContinent);
 		
 		Thread.sleep(1500);
 		
+		
 		String userContinents[] = {"Navigation Commands","Wait Commands"};
 		Select multiDropDown = new Select(seleniumCmds);
 		for (String cmd : userContinents) {
 			multiDropDown.selectByVisibleText(cmd);
 		}
+	
 		
 	}
 

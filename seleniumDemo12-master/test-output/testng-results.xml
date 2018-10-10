@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32229" started-at="2018-09-17T08:18:26Z" finished-at="2018-09-17T08:18:58Z">
+  <suite name="Default suite" duration-ms="28703" started-at="2018-10-06T06:26:24Z" finished-at="2018-10-06T06:26:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32229" started-at="2018-09-17T08:18:26Z" finished-at="2018-09-17T08:18:58Z">
+    <test name="Default test" duration-ms="28703" started-at="2018-10-06T06:26:24Z" finished-at="2018-10-06T06:26:53Z">
       <class name="com.scp.orange.hrm.login.OrangeHRMLoginTest">
-        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@18be83e4]" name="verifyUserLoginCredentials" duration-ms="19710" started-at="2018-09-17T13:48:28Z" data-provider="data" finished-at="2018-09-17T13:48:47Z">
+        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@18be83e4]" name="verifyUserLoginCredentials" duration-ms="17604" started-at="2018-10-06T11:56:24Z" data-provider="data" finished-at="2018-10-06T11:56:42Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginCredentials -->
-        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@18be83e4]" name="verifyUserLoginCredentials" duration-ms="11024" started-at="2018-09-17T13:48:47Z" data-provider="data" finished-at="2018-09-17T13:48:58Z">
+        <test-method status="PASS" signature="verifyUserLoginCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.scp.orange.hrm.login.OrangeHRMLoginTest@18be83e4]" name="verifyUserLoginCredentials" duration-ms="10599" started-at="2018-10-06T11:56:42Z" data-provider="data" finished-at="2018-10-06T11:56:53Z">
           <params>
             <param index="0">
               <value>

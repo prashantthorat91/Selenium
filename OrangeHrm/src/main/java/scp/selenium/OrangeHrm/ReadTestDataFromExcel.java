@@ -33,6 +33,8 @@ public class ReadTestDataFromExcel {
 	        objs[i-1][2] = row.getCell(2).getStringCellValue();
 	        System.out.println(objs[i-1][2]);
 	        
+	        
+	        
 		}
 		System.out.println(objs);
 		return objs;

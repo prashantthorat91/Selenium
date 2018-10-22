@@ -8,6 +8,7 @@ public static final String ORANGE_HRM_APP_URL = "https://opensource-demo.orangeh
 		Safari,
 		Chrome,
 		IE,
+		bb;
 	}
 
 }

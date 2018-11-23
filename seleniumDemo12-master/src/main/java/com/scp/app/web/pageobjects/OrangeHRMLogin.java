@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.scp.app.util.AppUtil;
 
+import sun.security.util.Password;
+
 public class OrangeHRMLogin {
 	
 	@FindBy(id="txtUsername")
@@ -20,7 +22,7 @@ public class OrangeHRMLogin {
 	
 	@FindBy(id="spanMessage")
 	WebElement errorMsg;
-
+	
 	
 	public void enterUserName(String name){
 			username.clear();

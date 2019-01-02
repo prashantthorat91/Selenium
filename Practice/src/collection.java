@@ -16,6 +16,8 @@ public class collection {
 		Emp e3 = new Emp(1,"C");
 		Emp e4 = new Emp(1,"A");
 		
+		
+		
 		HashMap<Emp,Integer> mapOfEmp = new HashMap<>();
 		System.out.println(mapOfEmp.get(e1));
 		

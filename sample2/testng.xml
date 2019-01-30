@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+    <listener class-name="scp.selenium.sample2.ListenerTest"/>
+  </listeners> 
+  <test thread-count="5" name="Test">
+    <classes>    
+      <class name="scp.selenium.sample2.TwoDimentionalArray"/>
+      <class name="scp.selenium.sample2.assertion"/>
+      <class name="restapi.GetData"/>
+      <class name="restapi.Sample"/>
+      <class name="restapi.Delete"/>
+      <class name="scp.selenium.sample2.Log4J"/>
+      <class name="scp.selenium.sample2.abc"/>
+      <class name="scp.selenium.sample2.XPath"/>
+      <class name="scp.selenium.sample2.DynamicTable"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

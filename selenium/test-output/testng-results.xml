@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18985" started-at="2018-12-26T06:47:43Z" finished-at="2018-12-26T06:48:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18985" started-at="2018-12-26T06:47:43Z" finished-at="2018-12-26T06:48:02Z">
+      <class name="scp.sel.sample.selenium.Log4jTest">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:scp.sel.sample.selenium.Log4jTest@604ed9f0]" name="initializeBrowser" is-config="true" duration-ms="4521" started-at="2018-12-26T06:47:43Z" finished-at="2018-12-26T06:47:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="m1()[pri:0, instance:scp.sel.sample.selenium.Log4jTest@604ed9f0]" name="m1" duration-ms="14407" started-at="2018-12-26T06:47:48Z" finished-at="2018-12-26T06:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method status="PASS" signature="m2()[pri:0, instance:scp.sel.sample.selenium.Log4jTest@604ed9f0]" name="m2" duration-ms="1" started-at="2018-12-26T06:48:02Z" finished-at="2018-12-26T06:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+      </class> <!-- scp.sel.sample.selenium.Log4jTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

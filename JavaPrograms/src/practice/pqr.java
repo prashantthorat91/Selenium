@@ -13,17 +13,17 @@ public class pqr {
 		}catch(Exception e){
 			System.out.println("not number");
 		}*/
-		abc();
+		pqr p = new pqr();
 		
 	}
+	Integer v;
+	{
+		System.out.println(v);
+	}
 	public static void abc() {
-		int a = 20;
-		String str = "564";
-		Integer ab = Integer.valueOf(str);
-		System.out.println(ab);
-		Integer i = 45;
-		String st = i.toString();
-		System.out.println(st);
+		String a;
+		//System.out.println(a);
+		
 	}
 	
 

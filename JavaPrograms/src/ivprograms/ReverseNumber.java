@@ -12,6 +12,10 @@ public class ReverseNumber {
 		System.out.println(rev);
 		long num1=456852;
 		System.out.println(new StringBuffer(String.valueOf(num1)).reverse());
+		int numb= 1234;
+		Integer n = numb;
+		n.toString();
+		
 	}
 	
 	

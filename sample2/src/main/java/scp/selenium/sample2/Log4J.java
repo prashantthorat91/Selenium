@@ -1,5 +1,10 @@
 package scp.selenium.sample2;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,8 +18,12 @@ public class Log4J {
 	Logger log = Logger.getLogger("devpinoyLogger");
 	WebDriver driver;
 	@BeforeMethod
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver","I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
+	public void setup() throws IOException {
+		FileInputStream file = new FileInputStream("./propertyFiles/Configuration.property");
+		Properties property = new Properties();
+		property.load(file);
+		String chromePath= property.getProperty("ChromeDriver");
+		System.setProperty("webdriver.chrome.driver",chromePath);
 	    driver = new ChromeDriver();
 	    String baseUrl = "https://www.freecrm.com";
         driver.get(baseUrl);

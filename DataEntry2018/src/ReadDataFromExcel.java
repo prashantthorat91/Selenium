@@ -26,7 +26,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class ReadDataFromExcel {
 	static Date Date_of_soil_sampling;
-	public static String DIST , BLOCK , DATE_OF_DATA_ENTRY, SUBDIST, VILLAGE, CROPGROUP, ADHAR_NO;
+	public static String DIST , BLOCK , DATE_OF_DATA_ENTRY, SUBDIST, VILLAGE, CROPGROUP, ADHAR_NO, MOBILE_NO;
 
 	public static String CROP , DURATION , REF_YIELD , UNIT1 , CROP_SEASON , SURVEY_NO;
 	static RichTextString VARIETY , CYCLE;
@@ -74,7 +74,7 @@ public class ReadDataFromExcel {
         	try {
         	System.out.println("Filling data");
         	String Name=getCellValueAsString(row.getCell(ExcelInfo.mainFName));
-        	String fName=getCellValueAsString(row.getCell(ExcelInfo.mainFatherName));
+        	//String fName=getCellValueAsString(row.getCell(ExcelInfo.mainFatherName));
             String Village=getCellValueAsString(row.getCell(ExcelInfo.mainVillage));
             String sNo=getCellValueAsString(row.getCell(ExcelInfo.mainSurveyNo));
             String cast = getCellValueAsString(row.getCell(ExcelInfo.mainCategory));
@@ -85,8 +85,9 @@ public class ReadDataFromExcel {
             String Gen=getCellValueAsString(row.getCell(ExcelInfo.mainGender));
             String irrigated= getCellValueAsString(row.getCell(ExcelInfo.mainIrrgated));
             String irrigationSource= getCellValueAsString(row.getCell(ExcelInfo.mainIrrigationSource));
+            String MobileNo=getCellValueAsString(row.getCell(ExcelInfo.mobileNo));
             System.out.println("All data read done");
-            AddMainFarmers(flag,driver,Name,fName,Village,sNo,cast,latitude,longi,AdharNo,NoOfFarmers,Gen,irrigated,irrigationSource,date);
+            AddMainFarmers(flag,driver,Name,MobileNo,Village,sNo,cast,latitude,longi,AdharNo,NoOfFarmers,Gen,irrigated,irrigationSource,date);
             
             writeResult(driver,row,file,book);
             
@@ -99,7 +100,7 @@ public class ReadDataFromExcel {
         		n=Integer.parseInt(NoOfFarmers);
         		System.out.println("n="+n);
         	}
-            AddFarmers(n-1,row,driver,file,book);
+            AddFarmers(n-1,row,driver,file,book,MobileNo);
             
             if(flag) {
             	//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -130,7 +131,7 @@ public class ReadDataFromExcel {
     }
     
     
-    public void AddMainFarmers(Boolean falg,WebDriver driver,String name,String fatherName,String Village,String surveyNo,String Category,String latitude,String longitude,String adharNo,String noOfFarmers,String Gender,String Irrigated,String IrrigationSouce,String date) throws IOException, InterruptedException {
+    public void AddMainFarmers(Boolean falg,WebDriver driver,String name,String mobNo,String Village,String surveyNo,String Category,String latitude,String longitude,String adharNo,String noOfFarmers,String Gender,String Irrigated,String IrrigationSouce,String date) throws IOException, InterruptedException {
         Double area= 0.5;
     	
     	int Date_of_soil_sampling = 15;
@@ -172,10 +173,10 @@ public class ReadDataFromExcel {
         dist.selectByVisibleText("Satara");
         
         Select block = new Select(driver.findElement(By.id("Block_cd")));
-        block.selectByVisibleText("Wai");
+        block.selectByVisibleText("Satara");
         
         Select subdist = new Select(driver.findElement(By.name("Sub_dis")));
-        subdist.selectByVisibleText("Wai");
+        subdist.selectByVisibleText("Satara");
         
         
         
@@ -262,6 +263,8 @@ public class ReadDataFromExcel {
         
         driver.findElement(By.id("IsAgree")).click();
     	}
+        
+        driver.findElement(By.id("Mobile")).sendKeys(mobNo);
         
         String SURVEY_NO = surveyNo;
         if(!SURVEY_NO.equals("NA")){
@@ -452,7 +455,7 @@ public class ReadDataFromExcel {
     }
     
     
-    public void AddFarmers(int noOfFarmers,Row r,WebDriver driver,File f,Workbook w) throws IOException {
+    public void AddFarmers(int noOfFarmers,Row r,WebDriver driver,File f,Workbook w,String mobNo) throws IOException {
     	int farmerNum = 1;
     	System.out.println("In Add Farmer:No of farmers:-"+noOfFarmers);
     	int columnNo = ExcelInfo.mainResult;
@@ -519,6 +522,7 @@ public class ReadDataFromExcel {
     	            {
     	            	System.out.print("\n Invalid CATEGORY = "+ CATEGORY);
     	            }
+    	            driver.findElement(By.id("Mobile")).sendKeys(mobNo);
     	            Thread.sleep(10000);
         			((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
         			

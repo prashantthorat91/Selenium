@@ -14,7 +14,7 @@ public static int mainIrrgated=10;
 public static int mainIrrigationSource=11;
 public static int mainResult=13;
 public static int mainNoOfFarmers=12;
-
+public static int mobileNo=2;
 
 
 public static int crop=1;

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="scp.selenium.package1.Facebook"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="scp.selenium.package1.Facebook">
+        <methods>
+          <include name="lastName"/>
+          <include name="initilizeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- scp.selenium.package1.Facebook -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="scp.selenium.package1.Facebook">
+        <methods>
+          <include name="lastName"/>
+          <include name="initilizeBrowser"/>
+          <include name="initilizeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- scp.selenium.package1.Facebook -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)(failed)">
+    <classes>
+      <class name="scp.selenium.package1.Facebook">
+        <methods>
+          <include name="lastName"/>
+          <include name="initilizeBrowser"/>
+          <include name="initilizeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- scp.selenium.package1.Facebook -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

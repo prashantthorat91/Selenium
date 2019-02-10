@@ -21,6 +21,7 @@ public class FrameHandling {
         List<WebElement> frame = driver.findElements(By.tagName("iframe"));
         System.out.println(frame.size());
         Iterator<WebElement> itr = frame.listIterator();
+        System.out.println("===================");
         while(itr.hasNext()) {
         	System.out.println(itr.next().getText());
         }
@@ -35,7 +36,7 @@ public class FrameHandling {
         Thread.sleep(500);
         //driver.findElement(By.name("firstname")).sendKeys("prashant");
        
-        
+         
         
 	}
 

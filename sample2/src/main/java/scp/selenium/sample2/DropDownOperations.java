@@ -15,10 +15,10 @@ import org.openqa.selenium.support.ui.Select;
 public class DropDownOperations {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\Prashant\\chromedriver.exe");
 	    WebDriver driver = new ChromeDriver();
 	    
-      /*  String baseUrl = "https://www.orangehrm.com/solutions/professional/demo/";
+        String baseUrl = "https://www.makemytrip.com/";
         driver.get(baseUrl);
         driver.manage().window().maximize();
         Select dropDounCountry = new Select(driver.findElement(By.name("Industry")));
@@ -43,11 +43,11 @@ public class DropDownOperations {
         System.out.println(dropDown.size());
         for(int i=0;i<dropDown.size();i++) {
         	System.out.println(dropDown.get(i).getText());
-        }*/
-        driver.get("https://www.makemytrip.com/");
+        }
+      /*  driver.get("https://www.makemytrip.com/");
         driver.findElement(By.className("o-i-trip-bag")).click();
         Thread.sleep(1000);
-        driver.findElement(By.id("ch_trips_login")).click();
+        driver.findElement(By.id("ch_trips_login")).click();*/
         
         
         

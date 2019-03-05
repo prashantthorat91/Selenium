@@ -22,7 +22,7 @@ public class TwoDimentionalArray {
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
 		Row row;
 		int rowCount = sheet.getLastRowNum();
-		System.out.println("Row xount is  :"+rowCount);
+		System.out.println("Row count is  :"+rowCount);
 		Object[][] objs =new Object[rowCount][3];
 		for (int i = 1; i <= rowCount; i++) {
 			row= sheet.getRow(i);

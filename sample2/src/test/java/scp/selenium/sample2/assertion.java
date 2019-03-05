@@ -58,6 +58,7 @@ public class assertion {
 		//softAssert.assertEquals("prashant", "thorat");
 		//softAssert.assertAll();
 		System.out.println("soft assert pass");
+		
       
 	}
 	

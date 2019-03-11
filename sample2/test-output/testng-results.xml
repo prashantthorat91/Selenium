@@ -1,34 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1791" started-at="2019-02-04T10:01:04Z" finished-at="2019-02-04T10:01:06Z">
+  <suite name="Default suite" duration-ms="1629" started-at="2019-03-05T08:42:32Z" finished-at="2019-03-05T08:42:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1791" started-at="2019-02-04T10:01:04Z" finished-at="2019-02-04T10:01:06Z">
+    <test name="Default test" duration-ms="1629" started-at="2019-03-05T08:42:32Z" finished-at="2019-03-05T08:42:34Z">
       <class name="practice.TwoDimentionalArray">
-        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@1e88b3c]" name="getdata" duration-ms="41" started-at="2019-02-04T15:31:06Z" data-provider="data" finished-at="2019-02-04T15:31:06Z">
+        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@4c70fda8]" name="getdata" duration-ms="31" started-at="2019-03-05T14:12:34Z" data-provider="data" finished-at="2019-03-05T14:12:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[prashant]]>
+                <![CDATA[Prashant]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123.0]]>
+                <![CDATA[1234.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[pass]]>
+                <![CDATA[NA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@1e88b3c]" name="getdata" duration-ms="0" started-at="2019-02-04T15:31:06Z" data-provider="data" finished-at="2019-02-04T15:31:06Z">
+        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@4c70fda8]" name="getdata" duration-ms="0" started-at="2019-03-05T14:12:34Z" data-provider="data" finished-at="2019-03-05T14:12:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nikhil]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[21564.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdata -->
+        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@4c70fda8]" name="getdata" duration-ms="0" started-at="2019-03-05T14:12:34Z" data-provider="data" finished-at="2019-03-05T14:12:34Z">
           <params>
             <param index="0">
               <value>
@@ -37,54 +58,12 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[7654.0]]>
+                <![CDATA[756258.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[fail]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@1e88b3c]" name="getdata" duration-ms="16" started-at="2019-02-04T15:31:06Z" data-provider="data" finished-at="2019-02-04T15:31:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[prashant]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9878977.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[pass]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getdata -->
-        <test-method status="PASS" signature="getdata(java.lang.Object, java.lang.Object, java.lang.Object)[pri:0, instance:practice.TwoDimentionalArray@1e88b3c]" name="getdata" duration-ms="0" started-at="2019-02-04T15:31:06Z" data-provider="data" finished-at="2019-02-04T15:31:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nikhil]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[222.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[pass]]>
+                <![CDATA[NA]]>
               </value>
             </param>
           </params>

@@ -5,6 +5,7 @@
     <groups>
       <run>
         <include name="scooter"/>
+        <include name="car"/>
       </run>
     </groups>
     <classes>

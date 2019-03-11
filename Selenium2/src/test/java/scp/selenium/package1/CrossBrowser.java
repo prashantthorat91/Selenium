@@ -18,7 +18,8 @@ public class CrossBrowser {
 		    driver = new FirefoxDriver();
 		    String baseUrl = "https://www.facebook.com/";
 	        driver.get(baseUrl);
-		}else if (browser.equalsIgnoreCase("chrome")) {
+		}else if (browser.equalsIgnoreCase("chrome")) 
+		{
 			System.setProperty("webdriver.chrome.driver","I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
 		    driver = new ChromeDriver();
 	        String baseUrl = "https://www.facebook.com/";

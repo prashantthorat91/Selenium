@@ -15,26 +15,27 @@ public class TwoDimentionalArray {
 	File file;
 	@DataProvider(name="data")
 	public Object[][] readData() throws InvalidFormatException, IOException{
-		file = new File("C:\\Users\\VinodJagtap\\Desktop\\pst.xlsx");
-		workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheet("sheet1");
-		int rowCount = sheet.getLastRowNum();
-		Object[][] obj = new Object[rowCount][3];
-		for(int i=1;i<=rowCount;i++) {
-			Row row = sheet.getRow(i);
-			obj[i-1][0] = row.getCell(0).getStringCellValue();
-			obj[i-1][1] = row.getCell(1).getNumericCellValue();
-			obj[i-1][2] = row.getCell(2).getStringCellValue();
-					
+		file = new File("C:\\Users\\Prashant\\Desktop\\PST.xlsx");
+		workbook= new XSSFWorkbook(file);
+		XSSFSheet sheet= workbook.getSheet("Sheet1");
+		Row row;
+		int rowcount = sheet.getLastRowNum();
+		System.out.println(rowcount);
+		Object[][] obj = new Object[rowcount][3];
+		for (int i=1;i<=rowcount;i++) {
+			row = sheet.getRow(i);
+			obj[i-1][0]= row.getCell(0).getStringCellValue();
+			obj[i-1][1]= row.getCell(1).getNumericCellValue();
+			obj[i-1][2]= row.getCell(2).getStringCellValue();
 		}
-		return obj;
 		
+		return obj;
 	}
 	@Test(dataProvider = "data")
-	public void getdata(Object uname, Object pwd, Object emsg) {
-		System.out.println("userName : "+uname);
-		System.out.println("Passwrd : "+pwd);
-		System.out.println("Expected msg : "+emsg);
+	public void getdata(Object uname, Object pwd, Object status) {
+		System.out.println("UserName: " +uname);
+		System.out.println("Password: " +pwd);
+		System.out.println("Status: " +status);
 	}
 
 }

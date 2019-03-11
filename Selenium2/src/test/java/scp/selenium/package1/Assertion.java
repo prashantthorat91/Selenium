@@ -27,7 +27,7 @@ public class Assertion {
 		Assert.assertNotEquals("prashant", "prashant");
 		System.out.println("pass---------------------");
 	}
-	@Test(priority = 4)
+	@Test(dependsOnMethods= {"verify"}, priority = 4)
 	public void assertTrue() {
 		Assert.assertTrue(4<2);
 		System.out.println("pass------AssertTrue");
@@ -57,5 +57,14 @@ public class Assertion {
       
 	}
 	
+	@Test(invocationCount =10, successPercentage=5)
+	public void softAssert1() {
+		
+		//softAssert.assertNotEquals("prashant", "thorat");
+		//softAssert.assertEquals("prashant", "thorat");
+		//softAssert.assertAll();
+		System.out.println("pass-----------8");
+      
+	}
 
 }

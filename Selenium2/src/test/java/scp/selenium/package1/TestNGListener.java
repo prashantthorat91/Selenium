@@ -10,11 +10,14 @@ public class TestNGListener implements ITestListener{
 	static int failCount = 0;
 	static int skipCount = 0;
 	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
+		System.out.println("pass count : "+passCount);
+		System.out.println("fail count : "+failCount);
+		System.out.println("skip count : "+skipCount);
+		PichartReport.generateTestReport(passCount, failCount, skipCount);
 		
 	}
 	public void onStart(ITestContext arg0) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
@@ -22,11 +25,11 @@ public class TestNGListener implements ITestListener{
 		
 	}
 	public void onTestFailure(ITestResult arg0) {
-		// TODO Auto-generated method stub
+		failCount++;
 		
 	}
 	public void onTestSkipped(ITestResult arg0) {
-		// TODO Auto-generated method stub
+		skipCount++;
 		
 	}
 	public void onTestStart(ITestResult arg0) {
@@ -34,7 +37,7 @@ public class TestNGListener implements ITestListener{
 		
 	}
 	public void onTestSuccess(ITestResult arg0) {
-		// TODO Auto-generated method stub
+		passCount++;
 		
 	}
 	

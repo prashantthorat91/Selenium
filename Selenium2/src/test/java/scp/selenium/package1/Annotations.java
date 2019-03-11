@@ -56,7 +56,7 @@ public class Annotations {
   public void test() {
 	  System.out.println("inside test method");
   }
-  @Test
+  @Test ()
   public void test2() {
 	  System.out.println("inside test2 method");
   }

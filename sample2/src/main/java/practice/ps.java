@@ -15,18 +15,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ps {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "E:\\Prashant\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://demo.guru99.com/test/newtours/register.php");
-		WebElement drpdwn = driver.findElement(By.name("country"));
-		Select dropDwn = new Select(drpdwn);
-		dropDwn.selectByIndex(2);
-		List<WebElement> l = dropDwn.getOptions();
-		for(int i=0;i<l.size();i++) {
-			System.out.println(l.get(i).getText());
+		driver.get("https://money.rediff.com/gainers/bsc/daily/groupa");
+		List column = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
+		System.out.println(column.size());
+		List row = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr/td[1]"));
+		int rowCount = row.size();
+		System.out.println(row.size());
+		String beforeXpath ="//*[@id=\"leftcontainer\"]/table/tbody/tr[";
+		String afterXpath = "]/td[3]";
+		for(int i=1;i<=rowCount;i++) {
+			//String value = driver.findElement(By.xpath(beforeXpath+i+afterXpath)).getText();
+			String value = driver.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr["+i+"]/td[3]")).getText();
+			if(value.equals("7.44")) {
+				driver.findElement(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr["+i+"]/td[1]")).click();
+			}
 		}
-		driver.quit();
-		
 	}
 
 	

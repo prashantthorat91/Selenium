@@ -17,6 +17,7 @@ public class AlertHandling {
 	    driver.findElement(By.xpath("//input[@type='text']")).sendKeys("1");
 	    driver.findElement(By.xpath("//input[@type='submit']")).click();
 	    Alert alert = driver.switchTo().alert();
+	   
 	    alert.accept();
 	}
 

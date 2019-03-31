@@ -9,12 +9,11 @@ public class XPath {
 	static WebDriver driver;
 	@Test
 	public void xpath(){
-		System.setProperty("webdriver.chrome.driver","I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","H:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
 	    driver = new ChromeDriver();
-        String baseUrl = "http://toolsqa.com/automation-practice-form/";
+        String baseUrl = "https://www.makemytrip.com/";
         driver.get(baseUrl);
-        driver.findElement(By.xpath("//input[@type='text' and @name='firstname']")).sendKeys("prashant");
-        driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("thorat");
-        driver.findElement(By.xpath("//*[@id='sex-0']")).click();
+       // driver.findElement(By.xpath(""))
+       
 	}
 }

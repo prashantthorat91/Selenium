@@ -24,7 +24,7 @@ public class ReadWriteExcel {
 	public static void readExcel() throws InvalidFormatException, IOException {
 		File file = new File("C:\\Users\\VinodJagtap\\Desktop\\test2.xlsx");
 		FileInputStream inputStream = new FileInputStream(file);
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
 		Iterator<Row> rows =sheet.rowIterator();
 		while(rows.hasNext()) {

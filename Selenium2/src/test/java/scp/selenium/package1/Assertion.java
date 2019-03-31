@@ -12,7 +12,7 @@ public class Assertion {
 	@Test(priority = 1,dependsOnMethods= {"assertTrue"})
 	public void softAsserrt() {
 		String st = "prashant";
-		softAssert.assertEquals(st, "prashat");
+		softAssert.assertEquals(st, "prat");
 		System.out.println("softassert--------------Fail");
 		softAssert.assertAll();
 	}

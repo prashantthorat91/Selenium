@@ -11,7 +11,6 @@
       <class name="scp.selenium.package1.AssertVerify">
         <methods>
           <include name="verify"/>
-          <include name="softAsserrt"/>
         </methods>
       </class> <!-- scp.selenium.package1.AssertVerify -->
     </classes>

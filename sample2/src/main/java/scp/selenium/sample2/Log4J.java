@@ -36,6 +36,7 @@ public class Log4J {
 		System.out.println(title);
 		//Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
 		Reporter.log("title verified");
+		log.error("");
 	}
 	@Test(priority=1)
 	public void freeCRMLogo() {

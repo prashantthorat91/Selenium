@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 public class CrossBrowser {	
 	WebDriver driver;
+	ChromeDriver driver2;
 	@BeforeTest
 	@Parameters("browser")
 	public void setBrowser(String browser) {

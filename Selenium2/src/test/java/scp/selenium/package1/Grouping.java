@@ -1,4 +1,4 @@
-package scp.selenium.package1;
+ package scp.selenium.package1;
 
 import org.testng.annotations.Test;
 

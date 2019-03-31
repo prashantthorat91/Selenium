@@ -20,7 +20,7 @@ import junit.framework.Assert;
 							driver = new FirefoxDriver();
 							break;
 					case Chrome:
-							System.setProperty("webdriver.chrome.driver", "I:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
+							System.setProperty("webdriver.chrome.driver", "H:\\Software\\selenium\\chromedriver_win32\\chromedriver.exe");
 							driver = new ChromeDriver();
 							break;
 					case IE:

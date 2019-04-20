@@ -1,0 +1,120 @@
+										sfclosed
+	create		-- drop -- create		 --
+	create-drop -- drop -- create		drop
+	
+	
+	update    --- if table presents -- use same-- if not present-- create -- updates too
+	validate -- check tables are present or not..
+	None-- developer is repsonbile for table creation.
+					resource	class
+					hbm		anntcls
+					xml or class
+					hibernate.cfg.xml
+	javaObject		hibernate ---
+						configuration -- class
+						sessionfactory -- Intefarface
+							session -- interface
+								transcation-- interface
+								query  -- interface
+								criteria -- interface
+								
+								
+	Configuration  -- class -- Builder designpattern -- hibernate.cfg.xml
+		SessionFactory
+			Session
+				transcation
+				query
+				criteria
+				
+				
+	hb2ddl.auto properties -- create/create-drop/validate/update/none			
+	SF -- opensession vs getcurrentsession
+	Session 
+		save vs persist
+		save vs update
+		save or saveorUpdate
+		update vs merge
+		se --flush vs commit --tr
+		clear vs delete vs close vs evict
+		get vs load
+		
+		
+	
+	
+		..Hibernate..
+		
+		ORM Framework..
+			Object relational Mapping..
+			
+			
+		JDBC -- java database connectivitty..
+			-- Load the drivers -- interface between java code and database -- TYpe4 -- OO
+			--Connection  -- 
+			Statement 
+			Resultset
+			--query--
+			
+		
+		Java developer -- Object						Relational Database
+		
+		class											Table
+		OBject											Row
+			fields											Columns
+			dt												dt
+			
+				
+				
+		Emp(1,A,20,"Pune")
+			insert into Emp values(e.getId,'e.getname')
+			
+			
+		ORM -- EMp -- Table
+				fields	colnm
+				
+		hibernate.cfg.xml -- database configuration
+		emp-mapping.xml---
+				
+		
+		
+		
+		
+
+		cfg.xml
+		
+		
+		<hibernate-configuration>
+			<sessionfactory>
+					<property name="hibernate.url"></property>
+							url -- protocal
+								db name
+								machine/ipaddress/hostname
+								portnno
+								dbschema
+					<property name="hibernate.username"></property>
+					<property name="hibernate.password"></property>
+					<property name="hibernate.driver"></property>
+							
+					
+					<property name="hibernate.dialect"></property>
+								ORM -- database indenpendent 
+					
+			</sessionfactory>
+		</hibernate-configuration>
+		
+		
+	hibernatecore and dabase jar maven dependency inside --- Pom.xml
+		hibernate.cfg.xml ---	 database config -- 
+				<hibernate-configuration>
+					<sessionfactory>
+				url/username/password/driver/dialect
+					</sessionfactory>
+					</hibernate-configuration>
+		employee.hbm.xml -- mapping file -- which class which table..which fields to which columns mapping..
+		
+		
+		javaobject ----- hibernate ---JDBC---- database
+		
+		
+		
+		
+		

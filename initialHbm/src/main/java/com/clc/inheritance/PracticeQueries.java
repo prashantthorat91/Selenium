@@ -33,7 +33,7 @@ public class PracticeQueries {
 	stud st3 = new stud(3, "vivek", 1500, 25);
 	stud st4 = new stud(4, "santosh", 9500, 35);
 	
-	SessionFactory factory = new Configuration().configure("mysql-hibernate.cfg.xml").buildSessionFactory();
+	SessionFactory factory = new Configuration().configure("mysql-hibernate.cfg.xml").addAnnotatedClass(stud.class).buildSessionFactory();
 	Session s= factory.openSession();
 	Transaction tr = s.beginTransaction();
 	s.save(st1);
@@ -43,40 +43,39 @@ public class PracticeQueries {
 	s.flush();
 	tr.commit();
 	
-	stud std1 = s.get(stud.class, 1);
-	System.out.println(std1);
-	stud std2 = s.load(stud.class, 2);
-	System.out.println(std2);
+	
+
+	stud st = s.get(stud.class, 1);
+	System.out.println(st);
+	stud s1 = s.load(stud.class, 2);
+	System.out.println(s1);
 	List<stud> list = s.createCriteria(stud.class).list();
-	System.out.println( list);
+	System.out.println(list);
 	
-	SQLQuery query = s.createSQLQuery("select * from emp_info");
-	List<stud> list2 = query.addEntity(stud.class).list();
-	System.out.println(list2);
+	SQLQuery squery = s.createSQLQuery("select * from emp_info where empName = 'prashant'");
+	List<stud> lis = squery.addEntity(stud.class).list();
+	System.out.println(lis);
+	Query query = s.createQuery("from stud");
+	List<stud> lis1 = query.list();
+	System.out.println(lis1);
 	
-	Query query1 = s.createQuery("from stud where empId = 1");
-	List<stud> hbmquery = query1.list();
-	System.out.println(hbmquery);
-	Query query2 = s.getNamedQuery("sql_all_emp"); 
-	List<stud> list1 = query2.list();
-	System.out.println(list1);
+	Query query1 = s.getNamedQuery("info");
+	List<stud> lis2 = query1.list();
+	System.out.println(lis2);
 	
-	query2 = s.getNamedQuery("select_all_emp_HQL");
-	List<stud> list3 = query2.setString("aa", "4").list();
+	Query query2 = s.getNamedQuery("named_info");
+	List<stud> list3 = query2.setString("aa", "prashant").list();
 	System.out.println(list3);
-	
-	
 
 	}
 }
 
 @NamedNativeQueries({
-	@NamedNativeQuery(name="sql_all_emp",query="select*from emp_info" , resultClass= stud.class)
+	@NamedNativeQuery(name="info",query= "select * from emp_info", resultClass= stud.class)
 })
 @NamedQueries({
-	@NamedQuery(name = "select_all_emp_HQL", query = "from stud where empId =:aa")
+	@NamedQuery(name="named_info",query="from stud where empName =:aa")
 })
-
 
 @Entity
 @Table(name="emp_info")
@@ -90,6 +89,11 @@ class stud{
 	public int getEmpId() {
 		return empId;
 	}
+	
+	public stud() {
+		super();
+	}
+
 	public void setEmpId(int empId) {
 		this.empId = empId;
 	}

@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DynamicTable2 {
@@ -21,7 +22,7 @@ public class DynamicTable2 {
 	}
 	public static void rowColumnCount() {
 		driver.get("https://money.rediff.com/gainers/bsc/daily/groupa");
-		List column = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
+		List<WebElement> column = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
 		columnSize = column.size();
 		System.out.println("no. of columns are: "+columnSize);
 		List rows = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]/table/tbody/tr/td[1]"));

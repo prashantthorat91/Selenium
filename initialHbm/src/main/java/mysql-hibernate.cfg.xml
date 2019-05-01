@@ -15,14 +15,16 @@
 	  <property name="format_sql">true</property>
 	  <property name="hibernate.current_session_context_class">thread</property>
 	  
+	 <!--  <property name="hibernate.cache.use_second_level_cache">true</property>
+	<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+	<property name="hibernate.cache.use_query_cache">true</property>
+
+		<property name="hibernate.generate_statistics">true</property>
+	   -->
+	  
 	  <!-- <mapping class="mapping.relationship.Product1"/> -->
 	  
-	  <!-- <mapping class="com.clc.inheritance.Emp1"/>
-	  <mapping class="com.clc.inheritance.Address1"/> -->
 	  
-	  <!-- <mapping class="com.clc.inheritance.Emp"/>
-	  <mapping class="com.clc.inheritance.CEmp"/>
-	  <mapping class="com.clc.inheritance.PEmp"/> -->
 	  
 	  <!-- <mapping class="com.clc.util.Employee"/> -->
 	  <!-- <mapping resource="employee.hbm.xml"/> -->

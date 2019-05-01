@@ -27,6 +27,7 @@ public class CachingHbm {
 
 		session1.flush();
 		tr.commit();
+		
 	}
 
 }

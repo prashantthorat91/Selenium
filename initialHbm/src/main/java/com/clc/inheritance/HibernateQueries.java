@@ -43,6 +43,7 @@ public class HibernateQueries {
 		tr.commit();
 		
 		
+		
 		Student st11  = (Student) session.get(Student.class, 101);
 		//Student s = session.get(Student.class, 121);
 		Student st22  = (Student) session.load(Student.class, 102);

@@ -21,6 +21,7 @@ public class TestHibernateCaching {
 			Statistics stats = sfactory.getStatistics();
 			stats.setStatisticsEnabled(true);
 			
+			
 			System.out.println("Before session1 " +stats);
 			
 			Session session1 = sfactory.openSession();

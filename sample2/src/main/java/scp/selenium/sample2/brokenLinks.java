@@ -20,6 +20,7 @@ public class brokenLinks {
 	    WebDriver driver = new ChromeDriver();
         String baseUrl = "https://www.freecrm.com";
         driver.get(baseUrl);
+        //driver.navigate().to(baseUrl);
         driver.findElement(By.name("username")).sendKeys("PrashantThorat");
         driver.findElement(By.name("password")).sendKeys("9657179957");
         Thread.sleep(2000);
